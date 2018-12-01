@@ -1,0 +1,222 @@
+$rose: #d94d67;
+$white: #ffffff;
+$black: #20211b;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+body
+{
+    color: $black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+strong
+{
+    font-style: normal!important;
+    font-weight: 700!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-weight: 700;
+    line-height: 40px;
+}
+
+h2
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+a,
+.btn,
+button,
+input[type="submit"]
+{
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    &:hover
+    {
+        text-decoration: none;
+        opacity: .7;
+    }
+}
+
+.btn
+{
+    padding: 15px 40px 15px 20px;
+    border-radius: 10px;
+}
+
+.btn-green
+{
+    color: $black;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: #bce611;
+    border-bottom: 5px solid #79ad00;
+    span
+    {
+        font-size: 2.1rem;            
+    }
+    &:hover
+    {
+        color: #20211b;
+
+    }
+}
+
+.white
+{
+    color: $white;
+}
+
+.rose
+{
+    color: $rose;
+}
+
+.thin
+{
+    font-weight: 300!important;
+}
+
+.normal
+{
+    font-weight: 400!important;
+}
+
+header#header
+{
+    background-image: url(../img/bg-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .instagram
+    {
+        color: rgba(255, 255, 255, .5);    
+    }
+    
+    .header-one
+    {
+        
+        .cris
+        {
+            top:0;
+            width: 100%;
+            margin-top: -30px;
+            position: absolute;
+            overflow: hidden;
+            img
+            {
+                width: 60%;
+                margin:0 auto;
+                display: block;
+                overflow: hidden;
+            }
+        }
+        .header-content 
+        {
+            
+            padding-top: 90px;
+            @media (min-width: $large)
+            {
+                padding: 90px 0;     
+            }
+            p
+            {
+                text-align: center;    
+            }
+            .cris-frase
+            {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-align: left;
+                line-height: 30px;
+            }
+        }    
+    }
+    .header-two
+    {
+        z-index: 0;
+        margin-top: -270px; 
+        padding: 5rem 0; 
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-image: url(../img/bg-2-mobile.jpg);
+        @media (min-width: $medium)
+        {
+            margin-top: -170px;
+        }
+        @media (min-width: $large)
+        {
+            margin-top: 100px; 
+            background-image: url(../img/bg-2.png);
+        }
+        h2
+        {
+            color: $white;
+        }
+        .thin
+        {
+            line-height: 30px;
+        }
+        .gallery
+        {
+            .owl-carousel
+            {
+                margin: 0;
+            }
+        }
+    }
+}
+
+section#explicar
+{
+    padding: 5rem 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/bg-3.jpg);
+    .imagem
+    {
+        right: 0;
+        text-align: right;
+        @media(min-width: $medium)
+        {
+            position: absolute;    
+        }  
+    }
+    span.number
+    {
+        color: $rose;
+        font-weight: 300;
+        text-align: left;
+        font-size: 6em!important;
+    }
+    span
+    {
+        text-align: right;
+        letter-spacing: -1px;
+        font-weight: 700;
+        line-height: 20px;
+        @media (min-width: $extra-large)
+        {
+            font-size: .95em;  
+        }
+    }
+}
